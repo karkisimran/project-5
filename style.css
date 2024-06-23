@@ -1,0 +1,39 @@
+body{
+    background-image: url(background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* margin: auto; */
+    width: 50%
+}
+
+.top-level a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+    
+
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+    display: inline-block;
+    justify-content: center;
+    
+    list-style: none;
+    
+}
+.toolbar li{
+    display: inline;
+    justify-content: center ;
+}
+
+.toolbar li a{
+    display: inline;
+    justify-content: center;
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    list-style: none;
+
+    
+}
