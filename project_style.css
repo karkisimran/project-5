@@ -90,50 +90,70 @@ div img{
     border-radius: 8px;
     transition: .5s;
 }
-h2 {
-    color: white;
-    margin-top: 50px;
-    display: flex;
-    justify-content: top;
-}
     
 h4{
-    color: white;
+    color: rgb(251, 249, 245);
+}
+
+.proxy-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
     margin-top: 50px;
-
-    
+    gap:20px 30px ;   
 }
 
-/* .proxy-container{
-     background-color: rgb(205, 174, 1); 
-    
- } */
-
-
- .proxy-items1 {
-    display: grid;
-    grid-template-columns: 30% auto;
-    
-    margin-left: 60px;
-    
-}
-
-
-.proxy-items2 {
-    display: grid;
-    grid-template-columns: auto 30%;
-     margin-top: 50px; 
-    margin-left: 20px;
-
-    gap: 10px 10px;
-}
 .project-placeholder-img{
     border-radius: 15px 50px;
-    border: 4px solid rgb(14, 14, 13) ;
-    background-color: rgb(250, 249, 246);
+    background-color: rgb(207, 155, 0);
     width: 200px;
     height: 150px;
-    float:left ;
+    margin-left: 30px;
     
 }
+.project-placeholder-img1{
+    border-radius: 15px 50px;
+    background-color: rgb(207, 155, 0);
+    width: 200px;
+    height: 150px;
+    margin-right: 30px;
+    
+}
+.proxy-items1{
+    margin-right: 500px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.proxy-items2{
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.proxy-items2  a{
+    text-decoration: none;
+    font-size: 25px;
+    color: wheat;
 
+}
+.proxy-items1  a{
+    text-decoration: none;
+    font-size: 25px;
+    color: wheat;
+}
+
+.proxy-container  a:hover{
+    background-color: burlywood;
+    color: black;
+    border-radius: 8px;
+    transition: .3s;
+    font-size: 30px;
+}
+.project-placeholder-img:hover{
+    cursor: pointer;
+    transition: .3s;
+    background-color: rosybrown;
+}
+.project-placeholder-img1:hover{
+    cursor: pointer;
+    transition: .3s;
+    background-color: rosybrown;
+
+}
