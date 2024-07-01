@@ -85,7 +85,7 @@ div img{
 }
 
 .toolbar a:hover, a:active{
-    background-color: rgb(227, 163, 13);
+    background-color: rgb(255, 199, 69);
     color: black;
     border-radius: 8px;
     transition: .5s;
@@ -104,7 +104,7 @@ h4{
 
 .project-placeholder-img{
     border-radius: 15px 50px;
-    background-color: rgb(207, 155, 0);
+    background-color: rgb(248, 153, 10);
     width: 200px;
     height: 150px;
     margin-left: 30px;
@@ -112,7 +112,7 @@ h4{
 }
 .project-placeholder-img1{
     border-radius: 15px 50px;
-    background-color: rgb(207, 155, 0);
+    background-color: rgb(248, 153, 10);
     width: 200px;
     height: 150px;
     margin-right: 30px;
@@ -149,11 +149,11 @@ h4{
 .project-placeholder-img:hover{
     cursor: pointer;
     transition: .3s;
-    background-color: rosybrown;
+    background-color: rgb(248, 180, 79);
 }
 .project-placeholder-img1:hover{
     cursor: pointer;
     transition: .3s;
-    background-color: rosybrown;
+    background-color: rgb(248, 180, 79);
 
 }
