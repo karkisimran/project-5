@@ -80,7 +80,7 @@ div img{
 }
 .information h1{
     padding-right: 30px;
-    color: wheat;
+    color: rgb(255, 201, 102);
     display: flex;
     flex-direction: col;
     font-size: 70px;
