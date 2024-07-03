@@ -92,3 +92,13 @@ div img{
     border-radius: 8px;
     transition: .5s;
 }
+
+@media (max-width:500px) {
+    body{
+        height: 100%;
+    }
+    div.information{
+        height: auto;
+    }
+    
+}

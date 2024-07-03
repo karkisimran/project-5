@@ -34,6 +34,7 @@ ul li a{
 .mylogo a{
     margin-top: 20px;
 }
+
 ul li{
     list-style-type: none;
     display: inline;  
@@ -55,6 +56,7 @@ ul{
     font-size: 15px;
     border-radius: 5px;
 }
+
 .mylogo a:hover, .mylogo a:active{
     color:rgb(201, 148, 50);
 } 
@@ -237,4 +239,34 @@ textarea.input{
     color: black;
     transition: .5s;
     font-weight: 600;
+}
+#icon_humburger{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+.clickable-btn{
+    width: 20%;
+    height: 30px;
+    font-size: 12px;
+}
+
+
+@media (max-width:500px) {
+    .item{
+        grid-template-columns: 1fr;
+    }
+    .contact{
+        display: none;
+    }
+    .text{
+        font-size: 30px;
+        text-align: center;
+    }
+    .clickable-btn{
+        width: 20%;
+        height: 30px;
+        font-size: 12px;
+    }
+    
 }
