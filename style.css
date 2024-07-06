@@ -44,25 +44,26 @@ body{
     top: 30px;
     display: block;
     text-transform: capitalize;
-    transition: 0.2s ease-out;
+    transition: 0.5s ease-out;
 }
 
  .menu_bar ul li a:hover {
     background-color: rgb(240, 190, 129);
     color: black;
-    transition: .3s ease-out; 
+    transition: .5s ease-out; 
     border-radius: 10px;
 }
 input{
     display: none;
     visibility: hidden;
+    appearance: none;
 }
 .toggle{
     position: absolute;
-    height: 40px;
-    width: 40px;
-    top: 30px;
-    left: 10px;
+    height: 30px;
+    width: 30px;
+    top: 50px;
+    left: 15px;
     z-index: 1;
     cursor: pointer;
     border-radius: 3px;
@@ -71,7 +72,7 @@ input{
 }
 .toggle .common{
     position: absolute;
-    height: 1px;
+    height: 3px;
     width: 20px;
     background-color: rgb(255, 122, 5);
     border-radius: 50px;
@@ -113,8 +114,6 @@ input:checked ~ .slide{
     transform: translateX(0);
     box-shadow: 0 0 15px black;
 }
-
-
 a{
     text-decoration: none;
     flex-direction: column;
@@ -162,7 +161,7 @@ a{
     background-color: rgb(255, 199, 69);
     color: black;
     border-radius: 8px;
-    transition: .5s;
+    transition: .5s ease-out;
 }
 
 .information{
@@ -189,14 +188,14 @@ a{
 }
 
 
-  @media (min-width:801px) {
+  @media (min-width:770px) {
     #menu_toggle,
     .toggle_bar{
         display: none;
     }  
      
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     body{
         overflow: hidden;
         background-color: black;

@@ -1,41 +1,110 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: rgb(12, 13, 15)
+    box-sizing: border-box;
 }
 body{
-    overflow: hidden;
+    overflow: auto;
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: black;
+    background-size: cover;
     margin: auto; 
-    width: 100%
-}
-header{
-   display: flex;
-   justify-content: space-between;
-   width: 100%
+    width: 100%;
+    height: 100vh; 
 }
 
-header a{
+#menu_toggle {
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+#menu_toggle a{
+    text-decoration: none;
+    color: rgb(18, 18, 17);
+    transition: color 0.3s ease;
+    padding: 5px;
+}
+#menu_toggle input{
+    position: absolute;
+    width: 40px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    
+}
+#menu_toggle span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: rgb(246, 181, 4);
+    border-radius: 3px;
+    z-index: 1;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),opacity 0.55 ease;
+    transform-origin: 4px 0;
+}
+
+#menu_toggle span:first-child{
+    transform-origin: 0% 0%;
+}
+#menu_toggle span:nth-last-child(2){
+    transform-origin: 0% 100%;
+}
+#menu_toggle input:checked ~ span{
+    opacity: 1;
+    transform   : rotate(45deg) translate(-2px, -1px);
+}
+#menu_toggle input:checked ~ span:nth-last-child(3){
+    opacity:0;
+    transform: rotate(0deg) scale(0.2,0.2);
+}
+#menu_toggle input:checked ~ span:nth-last-child(2){
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+#menu{
+    position: absolute;
+    left: -300px;
+    top: 100px;
+    width: 200px;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 150;
+    background: rgb(138, 136, 131);
+    color: black;
+    list-style-type: none;
+    transition: left 0.5s;
+}
+#menu li {
+    padding: 10px 0;
+    font-size: 20px;
+  }
+#menu_toggle input:checked ~ ul {
+    left:40px;
+  }
+
+a{
     text-decoration: none;
     flex-direction: column;
     align-items: center;
-    color: rgb(245, 242, 242);
-
+    color: white;
 }
-
 .toolbar ul li a{
     margin-right: 20px;
     justify-content: center;
     padding: 10px;
+
 }
 .mylogo a{
     margin-top: 20px;
 }
+
 .toolbar ul li{
     list-style-type: none;
-    display: inline;  
+    display: inline; 
 }
 
 .toolbar ul{
@@ -43,6 +112,7 @@ header a{
 }
 .toolbar{
     margin-left: 20rem;
+    
 }
 .main_project{
     background-color: orange;
@@ -55,162 +125,107 @@ header a{
     border-radius: 5px;
 }
 .mylogo a:hover, .mylogo a:active{
-    color:rgb(201, 148, 50);
-} 
-div img{
-    width: 30%;
-    height: auto;
+    color: rgb(201, 148, 50);
+    
 }
-.information h2, h3{
-    color: white;
-    font-size: 50px;
-}
-.information  h3{
-    color: white;
-    font-size: 25px;
-}
-.information{
-    position: relative;
-    margin-left: 700px;
-    margin-top: 150px;
-    font-size: 50px;
-}
-.information h1{
-    padding-right: 30px;
-    color: wheat;
-    display: flex;
-    flex-direction: col;
-    font-size: 70px;
-}
-
 .toolbar a:hover, a:active{
     background-color: rgb(255, 199, 69);
     color: black;
     border-radius: 8px;
-    transition: .5s;
+    transition: .5s ease-out;
 }
+
+.proxy{
+    padding: 15px 5%;
+    padding-bottom: 100px;
     
-h4{
-    color: rgb(251, 249, 245);
+}
+.proxy .heading{
+    text-align: center;
+    padding-bottom: 16px;
+    color: rgb(253, 139, 0);
+    text-shadow: 0 5px 15px #f5f3f1;
+    font-size: 50px;
+}
+.proxy .proxy_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+}
+.proxy .proxy_container .proxy-items{
+    box-shadow: 0 5px 10px #fff;
+    border-radius: 10px;
+    background-color: rgb(253, 139, 0);
+    text-align: left;
+    padding: 30px 20px;
+}
+.proxy .proxy_container .proxy-items:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0,.3);
+    transform: scale(1.02);
+}
+h1{
+    font-size: 30px;
+}
+ h4{
+    color: rgb(9, 9, 9);
     font-size: 17px;
 }
 
-.proxy-container{
-    display: grid;
-    grid-template-columns: auto auto auto auto ;
-    margin-top: 60px;
-    gap:20px 30px ;   
-}
-
-.project-placeholder-img{
+.project-placeholder{
     border-radius: 15px 50px;
-    background-color: rgb(248, 153, 10);
+    background-color: rgb(14, 14, 13);
     width: 200px;
     height: 150px;
     margin-left: 30px;
-    box-shadow: 0 0 20px 0 rgb(245, 164, 43);
-    
-}
-.project-placeholder-img1{
-    border-radius: 15px 50px;
-    background-color: rgb(248, 153, 10);
-    width: 200px;
-    height: 150px;
-    margin-right: 30px;
-    box-shadow: 0 0 20px 0 rgb(245, 164, 43);
-    
-}
-.proxy-items1{
-    margin-left: 20px;
-    margin-right: 300px;
-    display: grid;
-    grid-template-rows: 30px;
-}
-.proxy-items2{
-    margin-left: 20px;
-    margin-right: 30px;
-    display: grid;
-    grid-template-rows: 30px;
-}
-.proxy-items2  a{
-    text-decoration: none;
-    font-size: 25px;
-    color: wheat;
-
-}
-.proxy-items1  a{
-    text-decoration: none;
-    font-size: 25px;
-    color: wheat;
+    box-shadow: 0 5px 15px rgb(245, 164, 43);
 }
 
+.proxy-items a{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    
+}
+.proxy-items a:hover{
+    color: rgb(244, 243, 241);
+}
 .proxy-container  a:hover{
     background-color: burlywood;
     color: black;
     border-radius: 8px;
     transition: .3s;
 }
-.project-placeholder-img:hover{
+.project-placeholder:hover{
     cursor: pointer;
     transition: .3s;
-    background-color: rgb(248, 180, 79);
-}
-.project-placeholder-img1:hover{
-    cursor: pointer;
-    transition: .3s;
-    background-color: rgb(248, 180, 79);
+    background-color: rgb(243, 238, 193);
+    text-align: center ;
+    font-size: 25px;
 
 }
+
+ @media (min-width:770px) {
+    #menu_toggle,
+    .toggle_bar{
+        display: none;
+    }    
+} 
 @media (max-width: 768px) {
     body{
-        background-color: black;
-        
-        /* overflow: hidden; */
-        background-size: auto;
-    
+            overflow: hidden;
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: 250% auto;
+            background-position-y: 20rem;
+        }
+    .toolbar{
+            display: none;
+        }
     .menu-icon {
         display: block;
     }
-    }
-    .toolbar {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        text-align: center;
-        z-index: 1;
-    }
-    .toolbar ul {
-        display: block;
-        padding: 0;
-    }
-    .toolbar ul li {
-        display: block;
-        margin: 10px 0;
-    }
-    .menu-toggle:checked + .menu-icon + .toolbar {
-        display: block;
-        font-size: 30px;
-        background-color: rgb(249, 243, 243);
-    }
-    .information{
-        color: rgb(251, 169, 169);
-        margin: 20px;
-        padding: 20px;
-        width: calc(100% - 40px);
-        text-align: center;
-
-    }
-    .information h2, .information p{
-        font-size: 40px;
-
-    }
-    .information h1{
-        font-size: 50px;
-        justify-content: center;
-    }
+    
     .simran{
-        font-size: 50px;
+        font-size: 20px;
     } 
 } 
