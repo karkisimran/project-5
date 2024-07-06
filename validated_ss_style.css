@@ -6,7 +6,6 @@
 body{
     background-color: black;
     overflow: hidden;
-    background-image: url(background.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
@@ -164,75 +163,3 @@ a{
     border-radius: 8px;
     transition: .5s;
 }
-
-.information{
-    position: relative;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    text-align: right;
-}
-.information h2, p{
-    color: white;
-    font-size: 50px;
-    margin: 0;
-}
-.information  p{
-    color: white;
-    font-size: 25px;
-}
-
-.information h1{
-    color: rgb(255, 201, 102);
-    font-size: 70px;
-    margin-left: 50%;
-}
-
-
-  @media (min-width:801px) {
-    #menu_toggle,
-    .toggle_bar{
-        display: none;
-    }  
-     
-}
-@media (max-width: 800px) {
-    body{
-        overflow: hidden;
-        background-color: black;
-        background-repeat: no-repeat;
-        background-size: 250% auto;
-        background-position-y: 20rem;
-    }
-    .toolbar{
-        display: none;
-    }
-    .information{
-        display: flex;
-        flex-direction: column;
-        top: 30%;
-        transform: translate(-50%, -117%);
-        left: 60%;
-        color: black;
-        text-align: center;
-        font-size: 30px;
-    }
-    .information h2, .information p{
-        font-size: 40px;
-        top: 60%;
-    }
-    .information h1{
-        font-size: 50px;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        left: 60%;
-        text-align: center;
-        margin-left: 20px;
-        
-    }
-    .simran{
-        font-size: 30px;
-    } 
-} 
-

@@ -102,7 +102,7 @@ div img{
     position: relative;
     width: 100%;
     height: 90vh;
-    background: rgb(14, 14, 14); 
+    background: rgb(12, 12, 12); 
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -252,7 +252,7 @@ textarea.input{
 }
 
 
-@media (max-width:500px) {
+@media (max-width:800px) {
     .item{
         grid-template-columns: 1fr;
     }
