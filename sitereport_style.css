@@ -216,18 +216,28 @@ p{
 
 }
 @media (max-width: 768px) {
-    body{
-        overflow: hidden;
-        background-color: black;
-        background-repeat: no-repeat;
-        background-size: 250% auto;
-        background-position-y: 20rem;
-    }
+
     .toolbar{
         display: none;
     }
-    .content{
-        padding: 20px;
+
+    .content_container{
+        width: 50px;
+        padding-right: 20px;
+        
     }
     
-    } 
+    .content .heading{
+        text-align: left;
+        margin-left: 40px;
+        color: rgb(237, 236, 235);
+        text-shadow: 0 4px 5px #f8b573;
+        font-size: 30px;
+    }
+    .items1{
+        box-shadow: 0 5px 10px #fff;
+        border-radius: 10px;
+        background-color: rgb(249, 162, 31);
+    
+    }
+}
