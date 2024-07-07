@@ -17,26 +17,21 @@
         <div class="mylogo">
                 <a class="simran" href="index.html">SIMRAN</a>
         </div>
-        <label id="menu_toggle" >
-            <input type="checkbox" class="toggle_bar">
-            <div class="toggle">
-                <span class="top_line common"></span>
-                <span class="middle_line common"></span>
-                <span class="bottom_line common"></span>
-            </div>
-        <div class="slide">
-            <h1 class="top">MENU</h1>
-        <div class="menu_bar">
-                <ul>
+        <div id="container">
+            <div id="menu_toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
                     <li><a href="index.html" > HOME </a></li>
                     <li><a href="project.html" > PROJECTS </a></li>
                     <li><a href="contacts.html" class="main_project"> CONTACTS </a></li>
                     <li><a href="videodemo.html"> VIDEO-DEMO </a></li>
                     <li><a href="sitereport.html"> SITE-REPORT </a></li>
                 </ul>
+            </div>
         </div>
-    </div>
-    </label>
         <div class="toolbar">
             <ul>
                 <li><a href="index.html" > HOME </a></li>        
@@ -56,7 +51,7 @@
             <div class="sociallinks">
                 <span class="secondtxt">Connect with us:</span>
                 <ul class="social_media">
-                    <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
                     <li><a href="#"><i class='bx bxl-whatsapp'></i></a></li>
                     <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
                     <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
@@ -65,28 +60,27 @@
         </div>
         <div class="submit">
             <h4 class="thirdtxt text">Contact Us</h4>
-            <form action="">
+            <form action="https://mail.google.com/mail/u/0/#inbox?compose?new">
                 <div class="input_box">
-                    <input type="text" class="input" required>
-                    <label for="">Name</label>
+                    <input type="text" id="name" class="input" required>
+                    <label for="name">Name</label>
                 </div>
                 <div class="input_box">
-                    <input type="email" class="input" required>
-                    <label for="">Email</label>
+                    <input type="email" id="email" class="input" required>
+                    <label for="email">Email</label>
                 </div>
                 <div class="input_box">
-                    <input type="phone" class="input" required>
-                    <label for="">Phone</label>
+                    <input type="tel" id="phone" class="input" required>
+                    <label for="phone">Phone</label>
                 </div>
                 <div class="input_box">
-                    <textarea name="" class="input" required id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" class="input" required id="message" cols="30" rows="10"></textarea>
                     <label for="message">Message</label>
                 </div>
                 <input type="submit" class="clickable-btn" value="Submit">
             </form>
         </div>
     </div>
-</div>
 </div>
 </div>
 </body>

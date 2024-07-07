@@ -17,12 +17,13 @@ body{
 #menu_toggle {
     z-index: 1;
     user-select: none;
+    user-select: none;
     margin-top: 40px;
     margin-left: 10px;
   }
 #menu_toggle a{
     text-decoration: none;
-    color: rgb(247, 247, 247);
+    color: rgb(250, 250, 250);
     transition: color 0.3s ease;
     padding: 5px;
 }
@@ -73,7 +74,7 @@ body{
     margin: -50px 0 0 -50px;
     padding: 50px;
     padding-top: 50px;
-    background: rgb(7, 7, 7);
+    background: rgb(16, 16, 16);
     list-style-type: none;
     transition: left 0.5s;
 }
@@ -133,77 +134,13 @@ a{
     border-radius: 8px;
     transition: .5s ease-out;
 }
-
-.proxy{
-    padding: 15px 5%;
-    padding-bottom: 100px;
-    
+.holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
 }
-.proxy .heading{
-    text-align: center;
-    padding-bottom: 16px;
-    color: rgb(253, 139, 0);
-    text-shadow: 0 5px 15px #f5f3f1;
-    font-size: 50px;
-}
-.proxy .proxy_container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 20px;
-}
-.proxy .proxy_container .proxy-items{
-    box-shadow: 0 5px 10px #fff;
-    border-radius: 10px;
-    background-color: rgb(253, 139, 0);
-    text-align: left;
-    padding: 30px 20px;
-}
-.proxy .proxy_container .proxy-items:hover{
-    box-shadow: 0 10px 15px rgba(0, 0, 0,.3);
-    transform: scale(1.02);
-}
-h1{
-    font-size: 30px;
-}
- h4{
-    color: rgb(9, 9, 9);
-    font-size: 17px;
-}
-
-.project-placeholder{
-    border-radius: 15px 50px;
-    background-color: rgb(14, 14, 13);
-    width: 200px;
-    height: 150px;
-    margin-left: 30px;
-    box-shadow: 0 5px 15px rgb(245, 164, 43);
-}
-
-.proxy-items a{
-    font-size: 30px;
-    font-weight: 600;
-    color: black;
-    
-}
-.proxy-items a:hover{
-    color: rgb(244, 243, 241);
-}
-.proxy-container  a:hover{
-    background-color: burlywood;
-    color: black;
-    border-radius: 8px;
-    transition: .3s;
-}
-.project-placeholder:hover{
-    cursor: pointer;
-    transition: .3s;
-    background-color: rgb(243, 238, 193);
-    text-align: center ;
-    font-size: 25px;
-
-}
-
- @media (min-width:770px) {
+@media (min-width:770px) {
     #menu_toggle,
     .toggle_bar{
         display: none;
